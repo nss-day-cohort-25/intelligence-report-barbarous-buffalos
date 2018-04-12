@@ -6,16 +6,22 @@ Colors: gray navy #47657F
         not white #DCDBD9
 
 */
-/*listed tags
+listed tags
+#mug {
+    border: 10px solid #47657F;
+}
 EXECSUM
 nav
-body
+body {
+    color: green;
+}
 section
 div
 h2
-ul // li
+ul 
+li
 p
-
+/*
 RAPSHEET
 div
 h1
@@ -40,4 +46,3 @@ span
 
 
 
-*/
