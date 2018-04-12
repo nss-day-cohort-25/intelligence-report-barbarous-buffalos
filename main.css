@@ -1,48 +1,18 @@
-/*Playing with styling ideas
-Colors: gray navy #47657F
-        soft green #9AA9A2
-        mid green 	#769484
-        vibrant green 	#285A13
-        not white #DCDBD9
 
-*/
-listed tags
-#mug {
+img {
     border: 10px solid #47657F;
+    border-radius: 50%;
 }
-EXECSUM
-nav
-body {
-    color: green;
+#mug {
+    margin: 20px;
 }
-section
-div
-h2
-ul 
-li
-p
-/*
-RAPSHEET
-div
-h1
-ul // li
-
-NEWSFEED
-div
-h1
-article
-h3
-a href
-p
 
 
-FININT
-div
-h3
-h5
-ul // li
-p
-span
+
+
+
+
+
 
 
 
