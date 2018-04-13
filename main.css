@@ -1,3 +1,19 @@
 img {
-        border: solid 10px 
+        border: solid 10px; 
+        border-radius: 50%;
+        margin: 40px auto;
+        display: block;
+}
+
+.navbar {
+        margin: auto;
+        display: block;
+        background-color: lightgray;
+
+}
+
+.navLinks {
+        margin: 20px;
+        display: inline-flex;
+
 }
