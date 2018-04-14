@@ -1,19 +1,67 @@
+body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px;
+        background-color: #c0c8d6;
+        text-align: center;
+        
+
+}
+
+
+
 img {
         border: solid 10px; 
         border-radius: 50%;
-        margin: 40px auto;
-        display: block;
+        margin: 20px 20px;
+        width: 300px;
+        
 }
+
+.box {
+        background-color: #e3e7ed;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+        padding: 5px;
+        /*border: solid 7px;*/
+}
+
+
 
 .navbar {
         margin: auto;
         display: block;
-        background-color: lightgray;
+        background-color: black;
 
 }
 
 .navLinks {
         margin: 20px;
         display: inline-flex;
+        color: white;
+        text-decoration: none;
 
+}
+
+#mug {
+        padding: 10px;
+       /* text-align: center;*/
+        
+}
+
+.list { 
+        list-style-type: none;
+        margin: auto;
+        
+}
+
+
+
+
+
+
+/*#eddysnow {
+        margin: auto;
+        display: flex;
+        text-align: center;
 }
