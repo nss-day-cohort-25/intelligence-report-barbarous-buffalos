@@ -4,40 +4,43 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="main.css">
     </head>
     <title>NSSIA Report | Edward Snowden </title>
-    <nav></nav>
     <body>
         <div id="ExecSum">
             <!--Navigation-->
 
             <div class="navbar">
-                    <a href="#execSum">Summary</a>
-                    <a href="#rapsheet">Rapsheet</a>
-                    <a href="#newsfeed">News</a>
-                    <a href="#known financial interests">Financial Interests</a>
+                    <a class="navLinks" href="#execSum">Summary</a>
+                    <a class="navLinks" href="#rapsheet">Rapsheet</a>
+                    <a class="navLinks" href="#newsfeed">News</a>
+                    <a class="navLinks" href="#finInt">Financial Interests</a>
                   </div>        
             
-            <!--List of known associates-->
-            <section>
+           
+
+            <!--mug shot with name-->
+            <div id="mug">
+                <img src="https://media.scmagazine.com/images/2015/09/30/snowden_842596.jpg?format=jpg&zoom=1&quality=70&anchor=middlecenter&mode=pad" alt="ug mug">
+                <h1 id="eddysnow">Edward Snowden</h1>
+            </div>
+            
+
+             <!--List of known associates-->
+             <section class="box">
                 <h2>Known Associates</h2>
-                <ul>
+                <ul class="list">
                     <li>Captain Cradle Cap</li>
                     <li>Bernard the Rogue Oompaloompa</li>
                     <li>Spaghetti Claws</li>
                 </ul>
             </section>
 
-            <!--mug shot with name-->
-            <div id="mug">
-                <img src="https://media.scmagazine.com/images/2015/09/30/snowden_842596.jpg?format=jpg&zoom=1&quality=70&anchor=middlecenter&mode=pad" alt="ug mug">
-                <h2>Edward Snowden</h2>
-            </div>
-
             <!--aliases-->
-            <div>
+            <div class="box">
                 <h2>List of Known Aliases</h2>
-                <ul>
+                <ul class="list">
                     <li>Snow Flake</li>
                     <li>The Winter Soldier</li>
                     <li>Octothorpe Assassin</li>
@@ -46,7 +49,7 @@
             </div>
 
             <!--country of origin-->
-            <div>
+            <div class="box">
                 <h2>Country of Origin</h2>
                 <p>United States of America</p>
             </div>
@@ -61,7 +64,7 @@
                 <h1>
                 Alleged Crimes
                 </h2>
-                    <ul>
+                    <ul class="list">
                         <li>Theft of Government Property</li>
                         <li>Unauthorized Communication of National Defence Information.</li>
                         <li>Willful Communication of Classified Communications Intelligence
@@ -72,7 +75,7 @@
                 <h2>
                 List of convictions
                 </h2>
-                    <ul>
+                    <ul class="list">
                         <li>Edward Snowden has No List of Convictions</li>
                     </ul>
 
@@ -81,21 +84,21 @@
                 List of prisons where suspect was incarcerted. 
                 </h2> 
 
-                    <ul>
+                    <ul class="list">
                         <l1>Edward Snowden has Not Been Incarcerted</l1>
                     </ul>
             <!--any whitnesses to his crimes-->         
                 <h2>
                 Any Witnesses to Their Crimes.
                 </h2>
-                    <ul>
+                    <ul class="list">
                         <li>The National Security Allience</li>
                     </ul>
             <!--victims of his crimes-->
                 <h2>
                 Victims, if any, of their crimes
                 </h2>
-                    <ul>
+                    <ul class="list">
                         <li>The United States of America</li>
                     </ul>
 
@@ -132,7 +135,7 @@
             <h3>Known Financial Interests</h3>
             <!--List of bank accounts.-->
             <h5>Potential Bankroll Sources</h5>
-            <ul>
+            <ul class="list">
                 <li>Suspected of receiving funding from 'hacktivists'</li>
                 <li>Paid speaking engagements</li>
                 <li>Unconfirmed support from the Russian Federation</li>
@@ -154,3 +157,4 @@
     </footer>
 
 </html>
+
