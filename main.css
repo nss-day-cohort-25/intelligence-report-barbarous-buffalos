@@ -6,6 +6,10 @@ Colors: gray navy #47657F
         not white #DCDBD9
 
 */
+
+body{
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+}
 /*listed tags
 EXECSUM
 nav
@@ -21,9 +25,32 @@ div
 h1
 ul // li
 
-NEWSFEED
-div
-h1
+/* NEWSFEED */
+
+#newsfeed {
+        background-color: #9AA9A2;
+}
+
+#newsfeed h1 {
+        text-align: center;
+        padding-top: 10px;
+}
+
+.article_section {
+        display: block;
+        padding: 10px;
+        background-color: #DCDBD9;
+        margin: 20px;
+        border: solid #769484 3px;
+}
+
+.articleItem {
+        padding: 10px;
+}
+
+
+
+/* h1
 article
 h3
 a href
@@ -37,7 +64,7 @@ h5
 ul // li
 p
 span
-
+ */
 
 
 */
