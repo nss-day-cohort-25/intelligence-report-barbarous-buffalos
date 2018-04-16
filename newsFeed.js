@@ -14,9 +14,9 @@ ArticleListDB.articles.push(
         date: "4/11/18",
         location: "Algiers",
         typeOfEvent: "Plane Crash",
-        victims: "257 including algerian military and their families",
-        witnesses: "none",
-        lawEnfAgency: "Directorate General for National Security"
+        victims: "257 - Algerian military and families",
+        witnesses: "None",
+        lawEnfAgency: "DGNS"
     },
     {
         title: "The Equifax Data Breach",
@@ -40,7 +40,7 @@ ArticleListDB.articles.push(
         typeOfEvent: "Road Closure",
         victims: "Hundreds",
         witnesses: "Several",
-        lawEnfAgency: "Nashville Metro Polic"
+        lawEnfAgency: "Nashville Metro Police"
 })
 
 //Identify the location in the DOM to put the articles info
