@@ -10,8 +10,8 @@ ArticleListDB.articles.push(
         title: "Algeria military plane crash: 257 dead near Algiers",
         description: "An Algerian military plane has crashed near the capital killing 257 people on board, officials say.",
         url: "http://www.bbc.com/news/world-africa-43724941",
-        ratingOfInvolvement: "40%",
-        date: "11 April 2018",
+        rating: "low",
+        date: "4/11/18",
         location: "Algiers",
         typeOfEvent: "Plane Crash",
         victims: "257 including algerian military and their families",
@@ -19,11 +19,11 @@ ArticleListDB.articles.push(
         lawEnfAgency: "Directorate General for National Security"
     },
     {
-        title: "World's Biggest Data Breach",
-        description: "Earlier this year, NSA whistleblower Edward Snowden met with Jacqueline Moudeina, the first female lawyer in Chad and a legendary human rights advocate...",
-        url: "http://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/",
-        ratingOfInvolvement: "60%",
-        date:"04/10/2018",
+        title: "The Equifax Data Breach",
+        description: "If you have a credit report, there’s a good chance that you’re one of the 143 million American consumers whose sensitive personal information was exposed in a data breach at Equifax, one of the nation’s three major credit reporting agencies.",
+        url: "https://www.consumer.ftc.gov/blog/2017/09/equifax-data-breach-what-do",
+        rating: "medium",
+        date:"9/8/17",
         location: "World",
         typeOfEvent: "Data Breach",
         victims: "Millions",
@@ -34,8 +34,8 @@ ArticleListDB.articles.push(
         title: "Road closure to affect traffic near First Tennessee Park",
         description: "A portion of 5th Avenue North in downtown Nashville will be closed due to emergency sewer repairs starting on Thursday.",
         url: "http://www.wsmv.com/story/37942345/road-closure-to-affect-traffic-near-first-tennessee-park",
-        ratingOfInvolvement: "100%",
-        date:"04/01/2018",
+        rating: "high",
+        date:"4/1/18",
         location: "Nashville",
         typeOfEvent: "Road Closure",
         victims: "Hundreds",
@@ -61,34 +61,58 @@ const articleDomBuilder = () => {
 
             listOfArticles.appendChild(article)
 
-               // Section first
+               // Section - span for the article block
                const articleSection = document.createElement("span")
                articleSection.classList = "article_section"
                article.appendChild(articleSection)
 
 
-                // h2 child component of section
+                // Title and Date: h2 child of section
                 const articleTitle = document.createElement("h2")
                 articleTitle.classList = "article_title"
-                articleTitle.textContent = currentArticle.title
+                articleTitle.textContent = currentArticle.title + "  -  " + currentArticle.date
                 articleSection.appendChild(articleTitle)
                 console.log(articleTitle)
 
-                // p child component of section
+
+                // Rating: p child of section
+
+
+                const articleRating = document.createElement("p")
+                articleRating.classList = "article_rating"
+                articleRating.textContent = " Likelihood of Involvement: " + currentArticle.rating
+                articleSection.appendChild(articleRating)
+                console.log(articleRating)
+
+                if (currentArticle.rating === "high") {
+                    articleRating.classList += " rating_high"
+                } else if (currentArticle.rating === "medium") {
+                    articleRating.classList += " rating_medium"
+                } else {
+
+                }
+
+                // Description: p child of section
                 const articleDescription = document.createElement("p")
                 articleDescription.classList = "article_description"
-                articleDescription.textContent = currentArticle.description
+                articleDescription.textContent = currentArticle.description + "   "
                 articleSection.appendChild(articleDescription)
                 console.log(articleDescription)
 
-                // p child component of section
-                const articleRating = document.createElement("p")
-                articleRating.classList = "article_rating"
-                articleRating.textContent = currentArticle.rating
-                articleSection.appendChild(articleRating)
+                // URL: a child of description
+                const articleUrl = document.createElement("a")
+                articleUrl.classList = "article_url"
+                articleUrl.textContent = "Read More"
+                articleUrl.href = currentArticle.url
+                articleDescription.appendChild(articleUrl)
 
-                // Append HTML representation of article to the DOM
-                // article.appendChild(articleSection)
+                // additional info: p child of section
+                const articleInfo = document.createElement("p")
+                articleInfo.classList = "article_info"
+                articleInfo.textContent = "Location:   " + currentArticle.location +  "  |  Event Type:   " + currentArticle.typeOfEvent + "  |  Victims:   " + currentArticle.victims + "  |  Witnesses:   " + currentArticle.witnesses + "  |  Agencies:   " + currentArticle.lawEnfAgency
+                articleSection.appendChild(articleInfo)
+
+
             }
     )
 }
