@@ -104,6 +104,7 @@ const articleDomBuilder = () => {
                 articleUrl.classList = "article_url"
                 articleUrl.textContent = "Read More"
                 articleUrl.href = currentArticle.url
+                articleUrl.target = "_blank";
                 articleDescription.appendChild(articleUrl)
 
                 // additional info: p child of section
