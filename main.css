@@ -81,18 +81,26 @@ img {
 }
 
 .article_rating {
-        color: white;
+        color: darkgreen;
+        float: right;
         background-color:rgba(0, 128, 0, 0.733);
+        margin-top: -10px;
+        font-size: .85em;
+        padding: 5px;
+        width: 80px;
+        border-radius: 40px;
 }
 
 .rating_high {
-        color: darkred;
+        color: firebrick;
         background-color: tomato;
+        margin-left: 5px;
 }
 
 .rating_medium {
         color: goldenrod;
         background-color: yellow;
+        margin-left: 5px;
 }
 
 .article_description {

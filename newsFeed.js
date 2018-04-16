@@ -8,9 +8,9 @@ ArticleListDB.articles = []
 ArticleListDB.articles.push(
     {
         title: "Algeria military plane crash: 257 dead near Algiers",
-        description: "An Algerian military plane has crashed near the capital killing 257 people on board, officials say.",
+        description: "An Algerian military plane has crashed near the capital killing 257 people on board, officials say. The aircraft came down just after taking off from Boufarik military airport, west of Algiers. An inquiry is under way into the cause of the crash - Algeria's worst-ever air disaster. ",
         url: "http://www.bbc.com/news/world-africa-43724941",
-        rating: "low",
+        rating: "Low",
         date: "4/11/18",
         location: "Algiers",
         typeOfEvent: "Plane Crash",
@@ -22,7 +22,7 @@ ArticleListDB.articles.push(
         title: "The Equifax Data Breach",
         description: "If you have a credit report, there’s a good chance that you’re one of the 143 million American consumers whose sensitive personal information was exposed in a data breach at Equifax, one of the nation’s three major credit reporting agencies.",
         url: "https://www.consumer.ftc.gov/blog/2017/09/equifax-data-breach-what-do",
-        rating: "medium",
+        rating: "Medium",
         date:"9/8/17",
         location: "World",
         typeOfEvent: "Data Breach",
@@ -32,9 +32,9 @@ ArticleListDB.articles.push(
     },
     {
         title: "Road closure to affect traffic near First Tennessee Park",
-        description: "A portion of 5th Avenue North in downtown Nashville will be closed due to emergency sewer repairs starting on Thursday.",
+        description: "Crews have completed repairs on Fifth Avenue North after a sewer line collapsed near First Tennessee Park earlier this week. Officials with Metro Water Services will be able to reopen the street just in time before Friday night's Nashville Sounds game.",
         url: "http://www.wsmv.com/story/37942345/road-closure-to-affect-traffic-near-first-tennessee-park",
-        rating: "high",
+        rating: "High",
         date:"4/1/18",
         location: "Nashville",
         typeOfEvent: "Road Closure",
@@ -80,13 +80,13 @@ const articleDomBuilder = () => {
 
                 const articleRating = document.createElement("p")
                 articleRating.classList = "article_rating"
-                articleRating.textContent = " Likelihood of Involvement: " + currentArticle.rating
+                articleRating.textContent = currentArticle.rating + " involvement "
                 articleSection.appendChild(articleRating)
                 console.log(articleRating)
 
-                if (currentArticle.rating === "high") {
+                if (currentArticle.rating.toLowerCase() === "high") {
                     articleRating.classList += " rating_high"
-                } else if (currentArticle.rating === "medium") {
+                } else if (currentArticle.rating.toLowerCase() === "medium") {
                     articleRating.classList += " rating_medium"
                 } else {
 
