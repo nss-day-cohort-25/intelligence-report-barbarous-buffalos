@@ -80,7 +80,7 @@ const articleDomBuilder = () => {
 
                 const articleRating = document.createElement("p")
                 articleRating.classList = "article_rating"
-                articleRating.textContent = currentArticle.rating + " likelihood of Involvement: "
+                articleRating.textContent = currentArticle.rating + " involvement "
                 articleSection.appendChild(articleRating)
                 console.log(articleRating)
 

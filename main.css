@@ -86,8 +86,9 @@ img {
         background-color:rgba(0, 128, 0, 0.733);
         margin-top: -10px;
         font-size: .85em;
-        padding: 2px;
+        padding: 5px;
         width: 80px;
+        border-radius: 40px;
 }
 
 .rating_high {
