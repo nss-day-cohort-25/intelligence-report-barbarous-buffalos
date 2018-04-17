@@ -12,9 +12,63 @@ TroubleDB.crimes = []
 // Any witnesses to their crimes.
 // Victims, if any, of their crimes.
 TroubleDB.crimes.push(
-        crimes = {
-        crimeName: "",
+     {
+        crimeName: "Theft of Government Property",
         conviction:true,
+        witnesses:"US Government",
+        victims:"USA Citizens",
+        prisons: [
+            {
+                name: "ADX Florence",
+                start: "01/01/2016",
+                end: "02/01/16",
+                location: "Florence, CO"
+            },
+            {
+                name: "Fort Leavenworth",
+                start: "03/01/16",
+                end: "04/01/16",
+                location: "Fort Leavenworth, Kansas"
+            },
+            {
+                name: "Black Dolphin",
+                start: "01/07/2017",
+                end: "01/01/2018",
+                location: "Russia"
+            },
+        ]
+    },
+
+        {
+        crimeName: "Unauthorized Communication of National Defence Information",
+        conviction: false,
+        witnesses:"US Government",
+        victims:"USA Citizens",
+        prisons: [
+            {
+                name: "ADX Florence",
+                start: "01/01/2016",
+                end: "02/01/16",
+                location: "Florence, CO"
+            },
+            {
+                name: "Fort Leavenworth",
+                start: "03/01/16",
+                end: "04/01/16",
+                location: "Fort Leavenworth, Kansas"
+            },
+            {
+                name: "Black Dolphin",
+                start: "01/07/2017",
+                end: "01/01/2018",
+                location: "Russia"
+            }
+        ]
+    },
+
+        
+        {crimeName: "Willful Communication of Classified Communications Intelligence Information to an Unauthorized Person",
+        conviction: false,
         witnesses:"US Government",
         victims:"USA Citizens",
         prisons: [
@@ -38,12 +92,12 @@ TroubleDB.crimes.push(
             }
         ]
     }
-
+)
 //Identify the location in the DOM to put the rapsheet info
-const listOfRSItems = document.querySelector("#rapsheet")
+const CrimesInDom = document.querySelector("#rapsheet")
 
 //Function to put the DOM components into html
-const RSItemsDomBuilder = () => {
+const CrimesDomBuilder = () => {
 
     // Create a block element that will hold one crimes each
     let crimes = document.createElement("div")
