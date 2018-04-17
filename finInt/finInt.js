@@ -14,9 +14,9 @@ FinancialDatabase.details.forEach(
 
         //h2
        const titleHead = document.createElement('h2')
-       titleHead.value = FinancialDatabase.details.header()
+       titleHead.textContent = FinancialDatabase.details.header()
 
-        console.log(titleHead)
+       
         //h3
             //ul
                 //li
