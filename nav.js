@@ -5,29 +5,29 @@ const fragment = document.createDocumentFragment()
 const navi = document.createElement ('nav')
 
 const execSum = document.createElement ('a')
-execSum.href = "https://soundcloud.com/enkiisgod"
+execSum.href = "execSum/execSum.html"
 execSum.textContent = "Summary"
 navi.appendChild(execSum)
 
 const rapSht = document.createElement ('a')
-rapSht.href = "https://soundcloud.com/enkiisgod"
+rapSht.href = "rapSheet/rapSheet.html"
 rapSht.textContent = " Rap Sheet"
 navi.appendChild(rapSht)
 
 const NewsFeed = document.createElement ('a')
-NewsFeed.href = "https://soundcloud.com/enkiisgod"
+NewsFeed.href = "newsFeed/newsFeed.html"
 NewsFeed.textContent = " News Feed"
 navi.appendChild(NewsFeed)
 
 const finInt = document.createElement ('a')
-finInt.href = "https://soundcloud.com/enkiisgod"
+finInt.href = "finInt/finInt.html"
 finInt.textContent = " Financial Interests"
 navi.appendChild(finInt)
 
-const aboutTeam = document.createElement ('a')
+/*const aboutTeam = document.createElement ('a')
 aboutTeam.href = "https://soundcloud.com/enkiisgod"
 aboutTeam.textContent = " About the Team"
-navi.appendChild(aboutTeam)
+navi.appendChild(aboutTeam)*/
 
 
 fragment.appendChild(navi)
