@@ -23,9 +23,12 @@ FinancialDB.details.forEach(
         if (currentDetails.header === "Potential Bankroll") {
             const ulContent = document.createElement('ul')
 
-            const liContent = document.createElement('li')
-            liContent.textContent = currentDetails.content
-            financialBodyRef.appendChild(liContent)
+            currentDetails.content.forEach((listItem) => {
+
+                const liContent = document.createElement('li')
+                liContent.textContent = listItem
+                financialBodyRef.appendChild(liContent)
+            })    
 
         } else {
 
