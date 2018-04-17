@@ -1,8 +1,10 @@
+const FinancialDB = JSON.parse(localStorage.getItem("FinancialDatabase"))
+
 //Use querySelector()
-const financialBodyRef = document.querySelector("financialInterests")
+const financialBodyRef = document.querySelector("#financialInterests")
 
 //Send to DOM
-FinancialDatabase.details.forEach(
+FinancialDB.details.forEach(
     currentDetails => {
         //create section elements
     const list = document.createElement('section')
@@ -14,7 +16,9 @@ FinancialDatabase.details.forEach(
 
         //h2
        const titleHead = document.createElement('h2')
-       titleHead.textContent = FinancialDatabase.details.header()
+       titleHead.textContent = currentDetails.header
+       financialBodyRef.appendChild(titleHead)
+     
 
        
         //h3
