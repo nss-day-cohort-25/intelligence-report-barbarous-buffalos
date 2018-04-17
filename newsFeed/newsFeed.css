@@ -1,0 +1,82 @@
+/* NEWSFEED SECTION */
+/* Newsfeed block */
+#newsfeed {
+    background-color: #9AA9A2;
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* Newsfeed header */
+#newsfeed h1 {
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 0;
+}
+
+/* Newsfeed article section */
+.article_section {
+    display: block;
+    padding: 10px;
+    background-color: #DCDBD9;
+    margin: 20px;
+    border: solid #769484 3px;
+}
+
+/* Newsfeed space between articles */
+.articleItem {
+    padding: 20px;
+}
+
+/* Newsfeed format for url */
+.article_url {
+    font-size: .8em;
+    color: blue;
+    text-decoration: none;
+}
+
+/* Newsfeed rating format */
+.article_rating {
+    color: darkgreen;
+    float: right;
+    background-color:rgba(0, 128, 0, 0.733);
+    margin-top: -10px;
+    font-size: .85em;
+    padding: 5px;
+    width: 80px;
+    border-radius: 40px;
+    box-shadow: 5px 10px #888888;
+}
+
+/* Newsfeed additional format for high rating */
+.rating_high {
+    color: firebrick;
+    background-color: tomato;
+    margin-left: 5px;
+}
+
+/* Newsfeed additional format for medium rating */
+.rating_medium {
+    color: goldenrod;
+    background-color: yellow;
+    margin-left: 5px;
+}
+
+/* Newsfeed format for article descriptions */
+.article_description {
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* Newsfeed details on bottom of each article */
+.article_info {
+    display: block;
+    font-size: .7em;
+    color: white;
+    background-color: gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+}
+
