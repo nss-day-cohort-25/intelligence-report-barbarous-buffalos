@@ -1,0 +1,51 @@
+/*STYLING FOR FINANCIAL INTERESTS*/
+/* colors:
+blue #47657F
+soft green #9AAAA0
+creamy beige #DCDBD9
+mid green #789383
+high green #2A5913 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #DCDBD9;
+    text-align: ;
+}
+.navbar {
+    margin-bottom: 20px;
+    margin: auto;
+    display: block;
+    background-color: black;
+}
+
+.navLinks {
+    margin: 20px;
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
+}
+.sticky {
+    margin-bottom: 20px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+  }
+
+.financialDetails {
+    color: #47657F;
+}
+  h2 {
+    color: #47657F;
+    text-shadow: 1px 1px 2px #789383;
+  }
+
+ul {
+    /* text-decoration: none; */
+    /* list-style-image: url('http://jacksbox.de/wp-content/uploads/2013/03/coin.png');
+    /* margin: 0; */
+    /* padding: 0; */ */
+}
+li {}
+p {}
