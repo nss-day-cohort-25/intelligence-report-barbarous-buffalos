@@ -5,63 +5,107 @@ creamy beige #DCDBD9
 mid green #789383
 high green #2A5913 */
 body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0;
-        background-color: #c0c8d6;
-        text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color:  #DCDBD9;
+    text-align: center;
 }
 
 
-img {
-        flex-direction: inherit;
-        border: solid 10px;
-        border-radius: 50%;
-        margin: 20px 20px;
-        margin-top: 70px;
-        width: 300px;
+#mug img {
+    border: solid 10px;
+    border-radius: 50%;
+    /* margin: 20px 20px; */
+    margin-top: 80px;
+    /* width: 300px; */
+    background-color:#789383;
 }
-
 
 .navbar {
-        margin-bottom: 20px;
-        margin: auto;
-        display: block;
-        background-color: black;
+    margin-top: 0;
+    margin: 50px;
+    width: 70%;
+}
+
+#nav {
+   display: flex;
+   background-color: #47657F;
+
+}
+#mug {
+    padding: 10px;
+   text-align: center;
+}
+
+#eddysnow {
+    padding-bottom: 40px;
+     color: white;
+}
+
+.box {
+    background-color: #e3e7ed;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+    /*border: solid 7px;*/
+}
+
+.navbar {
+    margin-bottom: 20px;
+    margin: auto;
+    display: block;
+    background-color: #47657F;
 }
 
 .navLinks {
-        margin: 20px;
-        display: inline-flex;
-        color: white;
-        text-decoration: none;
+    margin: 25px;
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
 }
 
-#mug {
-        padding: 10px;
-       /* text-align: center;*/
+.logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    float: left;
+    padding: 10px;
 }
-
 .list {
-        list-style-type: none;
-        margin: auto;
+    list-style-type: none;
+    margin: auto;
 }
 
 .sticky {
-        margin-bottom: 20px;
-        width: 100%;
-        margin: auto;
-        position: fixed;
-        top: 0;
-        
-      }
+    margin-bottom: 20px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+  }
 
-
-/*#eddysnow {
-        margin: auto;
-        display: flex;
-        text-align: center;
+.footer {
+    background-color: #47657F;
+    margin: auto;
+    height: 40px;
+    color: #DCDBD9;
+    padding-top:10px;
 }
 
+p {
+    margin-top: 4px;
 
+}
 
-
+.tinted-image {
+    background:
+      /* top, transparent green with gradient */
+      linear-gradient(
+            rgba(42, 89, 19, .35),
+            rgba(42, 89, 19, .35)
+      ),
+      /* bottom, image */
+      url(https://media.scmagazine.com/images/2015/09/30/snowden_842596.jpg);
+  }
