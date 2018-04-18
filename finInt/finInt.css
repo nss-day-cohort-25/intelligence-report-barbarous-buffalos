@@ -1,0 +1,57 @@
+/*STYLING FOR FINANCIAL INTERESTS*/
+/* colors:
+blue #47657F
+soft green #9AAAA0
+creamy beige #DCDBD9
+mid green #789383
+high green #2A5913 */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #DCDBD9;
+    margin:0 20px;
+    border-style: clear;
+    padding-top: 65px;
+}
+.navbar {
+    margin-bottom: 20px;
+    margin: auto;
+    display: block;
+    background-color: #47657F;
+}
+
+.navLinks {
+    margin: 20px;
+    display: inline-flex;
+    color: #DCDBD9;
+    text-decoration: none;
+}
+.sticky {
+    margin-bottom: 20px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+  }
+section {
+    margin:0 20px;
+    border-style:clear;
+}
+
+.financialDetails {
+    color: #47657F;
+
+}
+  h2 { 
+    color: #47657F;
+    text-shadow: 2px 2px #789383;
+  }
+
+li {
+    color: #47657F;
+    list-style-type: none;
+}
+p {
+  padding: 5px;
+  color: #47657F;
+}
