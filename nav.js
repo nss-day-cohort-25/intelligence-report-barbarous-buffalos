@@ -45,7 +45,7 @@ document.querySelector("#nav").appendChild(fragment)
 
 //sticky nav
 
-window.onscroll = function() {myFunction()};
+window.onload = function() {myFunction()};
 
 var sticky = navi.offsetTop
 
