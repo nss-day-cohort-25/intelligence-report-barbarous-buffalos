@@ -1,7 +1,7 @@
 /* NEWSFEED SECTION */
 /* Newsfeed block */
 #newsfeed {
-    background-color: #9AA9A2;
+    background-color: rgba(42, 89, 19, .9);
     width: 70%;
     margin: auto;
     margin-top: 30px;
@@ -11,8 +11,10 @@
 /* Newsfeed header */
 #newsfeed h1 {
     text-align: center;
-    padding-top: 10px;
+    padding-top: 20px;
     margin-bottom: 0;
+    color: #47657F;
+    text-shadow: 2px 2px #DCDBD9;
 }
 
 /* Newsfeed article section */
@@ -22,6 +24,7 @@
     background-color: #DCDBD9;
     margin: 20px;
     border: solid #769484 3px;
+    color: rgba(42, 89, 19, .6);
 }
 
 /* Newsfeed space between articles */
@@ -58,7 +61,7 @@
 }
 
 .section_high {
-    background-color: rgba(255,99,71,.4) ;
+    background-color: rgba(255,99,71,.6) ;
 }
 
 /* Newsfeed additional format for medium rating */
@@ -80,9 +83,20 @@
     display: block;
     font-size: .7em;
     color: #DCDBD9;
-    background-color: gray;
+    background-color: #47657F;
     padding-top: 5px;
     padding-bottom: 5px;
     margin-left: 10px;
 }
 
+
+.tinted-image {
+    background:
+      /* top, transparent green with gradient */
+      linear-gradient(
+            rgba(42, 89, 19, .35),
+            rgba(42, 89, 19, .35)
+      ),
+      /* bottom, image */
+      url(https://media.scmagazine.com/images/2015/09/30/snowden_842596.jpg);
+  }
