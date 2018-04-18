@@ -1,7 +1,7 @@
 
 body {
         font-family: Arial, Helvetica, sans-serif;
-        margin: 20px;
+        margin: 0;
         background-color: #c0c8d6;
         text-align: center;
 }
@@ -24,6 +24,7 @@ img {
 }
 
 .navbar {
+        margin-bottom: 20px;
         margin: auto;
         display: block;
         background-color: black;
@@ -47,9 +48,12 @@ img {
 }
 
 .sticky {
+        margin-bottom: 20px;
+        width: 100%;
+        margin: auto;
         position: fixed;
         top: 0;
-        width: 100%
+        
       }
 
 
