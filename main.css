@@ -1,7 +1,12 @@
-
+/* colors:
+blue #47657F
+soft green #9AAAA0
+creamy beige #DCDBD9
+mid green #789383
+high green #2A5913 */
 body {
         font-family: Arial, Helvetica, sans-serif;
-        margin: 20px;
+        margin: 0;
         background-color: #c0c8d6;
         text-align: center;
 }
@@ -11,6 +16,7 @@ img {
         border: solid 10px;
         border-radius: 50%;
         margin: 20px 20px;
+        margin-top: 70px;
         width: 300px;
 }
 
@@ -24,6 +30,7 @@ img {
 }
 
 .navbar {
+        margin-bottom: 20px;
         margin: auto;
         display: block;
         background-color: black;
@@ -45,6 +52,15 @@ img {
         list-style-type: none;
         margin: auto;
 }
+
+.sticky {
+        margin-bottom: 20px;
+        width: 100%;
+        margin: auto;
+        position: fixed;
+        top: 0;
+        
+      }
 
 
 /*#eddysnow {
