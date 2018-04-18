@@ -5,6 +5,11 @@ const fragment = document.createDocumentFragment()
 const navi = document.createElement ('nav')
 navi.className = "navbar"
 
+const logo = document.createElement ('img')
+logo.className = "logo"
+logo.src = "logo.jpg"
+navi.appendChild(logo)
+
 const execSum = document.createElement ('a')
 execSum.className = "navLinks"
 execSum.href = "execSum/execSum.html"

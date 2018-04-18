@@ -7,7 +7,7 @@ body {
 }
 
 
-img {
+#mug img {
         border: solid 10px;
         border-radius: 50%;
         /* margin: 20px 20px; */
@@ -16,6 +16,17 @@ img {
         background-color:#789383;
 }
 
+.navbar {
+        margin-top: 0;
+        margin: 50px;
+        width: 70%;
+}
+
+#nav {
+       display: flex;
+       background-color: #47657F;
+
+}
 #mug {
         padding: 10px;
        text-align: center;
@@ -43,13 +54,20 @@ img {
 }
 
 .navLinks {
-        margin: 20px;
+        margin: 25px;
         display: inline-flex;
         color: white;
         text-decoration: none;
         font-size: 1.3em;
 }
 
+.logo {
+        height: 60px;
+        width: 60px;
+        border-radius: 50px;
+        float: left;
+        padding: 10px;
+}
 .list {
         list-style-type: none;
         margin: auto;
