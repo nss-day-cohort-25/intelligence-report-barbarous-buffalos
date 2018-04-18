@@ -9,13 +9,13 @@ KnownAssDB.articles.push(
     {
         title: "Known Associates",
         description: " ",
-        rating: "Low",
-        date: "4/11/18",
-        location: "Algiers",
-        typeOfEvent: "Plane Crash",
-        victims: "257 - Algerian military and families",
-        witnesses: "None",
-        lawEnfAgency: "DGNS"
+        rating: "",
+        date: "",
+        location: "",
+        typeOfEvent: "",
+        victims: "",
+        witnesses: "",
+        lawEnfAgency: ""
     },
     {
         title: "The Equifax Data Breach",
