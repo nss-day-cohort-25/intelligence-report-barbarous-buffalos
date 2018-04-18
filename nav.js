@@ -3,23 +3,28 @@ const fragment = document.createDocumentFragment()
 
 // Create div and nav child
 const navi = document.createElement ('nav')
+navi.className = "navbar"
 
 const execSum = document.createElement ('a')
+execSum.className = "navLinks"
 execSum.href = "execSum/execSum.html"
 execSum.textContent = "Summary"
 navi.appendChild(execSum)
 
 const rapSht = document.createElement ('a')
+rapSht.className = "navLinks"
 rapSht.href = "rapSheet/rapSheet.html"
 rapSht.textContent = " Rap Sheet"
 navi.appendChild(rapSht)
 
 const NewsFeed = document.createElement ('a')
+NewsFeed.className = "navLinks"
 NewsFeed.href = "newsFeed/newsFeed.html"
 NewsFeed.textContent = " News Feed"
 navi.appendChild(NewsFeed)
 
 const finInt = document.createElement ('a')
+finInt.className = "navLinks"
 finInt.href = "finInt/finInt.html"
 finInt.textContent = " Financial Interests"
 navi.appendChild(finInt)
@@ -34,14 +39,13 @@ fragment.appendChild(navi)
 
 
 /*
-    Now I can update my HTML document all at once, with all
-    three emperor components rendered. Otherwise, I would
-    have needed to add each one, individually - a much more
-    "expensive" operation.
+    append to div with id of nav
 */
 document.querySelector("#nav").appendChild(fragment)
 
-window.onscroll = function() {myFunction()};
+//sticky nav
+
+window.onload = function() {myFunction()};
 
 var sticky = navi.offsetTop
 
