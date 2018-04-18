@@ -7,7 +7,7 @@ navi.className = "navbar"
 
 const logo = document.createElement ('img')
 logo.className = "logo"
-logo.src = "logo.jpg"
+logo.src = "logo.png"
 navi.appendChild(logo)
 
 const execSum = document.createElement ('a')
