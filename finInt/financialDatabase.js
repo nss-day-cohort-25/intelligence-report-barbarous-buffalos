@@ -10,7 +10,7 @@ FinancialDatabase.details = []
 FinancialDatabase.details.push(
     {
         header: "Potential Bankroll",
-        content: ["Suspected of receiving funding from 'hacktivists'", "Paid speaking engagements", "Unconfirmed support from the Russian Federation"]
+        content: ["Suspected of receiving funding from 'hacktivists'" , "Paid speaking engagements" , "Unconfirmed support from the Russian Federation"]
     },//FinancialDatabase.details.content.forEach()
     {
         header: "Associated Businesses",
