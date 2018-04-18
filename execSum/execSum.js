@@ -8,7 +8,7 @@ KnownAssDB.articles = []
 KnownAssDB.articles.push(
     {
         title: "Known Associates",
-        description: "An Algerian military plane has crashed near the capital killing 257 people on board, officials say. The aircraft came down just after taking off from Boufarik military airport, west of Algiers. An inquiry is under way into the cause of the crash - Algeria's worst-ever air disaster. ",
+        description: " ",
         rating: "Low",
         date: "4/11/18",
         location: "Algiers",
