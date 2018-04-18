@@ -8,21 +8,22 @@ high green #2A5913 */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
     background-color: #DCDBD9;
-    text-align: ;
+    margin:0 20px;
+    border-style: clear;
+    padding-top: 65px;
 }
 .navbar {
     margin-bottom: 20px;
     margin: auto;
     display: block;
-    background-color: black;
+    background-color: #47657F;
 }
 
 .navLinks {
     margin: 20px;
     display: inline-flex;
-    color: white;
+    color: #DCDBD9;
     text-decoration: none;
 }
 .sticky {
@@ -32,20 +33,25 @@ body {
     position: fixed;
     top: 0;
   }
+section {
+    margin:0 20px;
+    border-style:clear;
+}
 
 .financialDetails {
     color: #47657F;
+
 }
-  h2 {
+  h2 { 
     color: #47657F;
-    text-shadow: 1px 1px 2px #789383;
+    text-shadow: 2px 2px #789383;
   }
 
-ul {
-    /* text-decoration: none; */
-    /* list-style-image: url('http://jacksbox.de/wp-content/uploads/2013/03/coin.png');
-    /* margin: 0; */
-    /* padding: 0; */ */
+li {
+    color: #47657F;
+    list-style-type: none;
 }
-li {}
-p {}
+p {
+  padding: 5px;
+  color: #47657F;
+}

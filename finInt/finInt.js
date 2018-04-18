@@ -13,7 +13,7 @@ FinancialDB.details.forEach(
 
         //Add the attribute to the component
         list.setAttributeNode(listItems)
-
+        financialBodyRef.appendChild(list)
         //h2
        const titleHead = document.createElement('h2') //creating h2 element
        titleHead.textContent = currentDetails.header //pulling info from array object
