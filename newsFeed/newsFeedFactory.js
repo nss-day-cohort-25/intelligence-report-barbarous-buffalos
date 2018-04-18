@@ -43,6 +43,7 @@ const articleDomBuilder = () => {
 
                 if (currentArticle.rating.toLowerCase() === "high") {
                     articleRating.classList += " rating_high"
+                    articleSection.classList += " section_high"
                 } else if (currentArticle.rating.toLowerCase() === "medium") {
                     articleRating.classList += " rating_medium"
                 } else {
