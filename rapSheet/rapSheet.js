@@ -106,67 +106,67 @@ const CrimesDomBuilder = () => {
 
     // Iterate over the array of articles in the database
 
-    ArticleListDB.articles.forEach(
-        (currentArticle, i) => {
+    TroubleDB.crimes.forEach(
+        (currentCrimes, i) => {
 
-            listOfArticles.appendChild(article)
+            listOfCrimes.appendChild(crimes)
 
                // Section - span for the article block
-               const articleSection = document.createElement("span")
-               articleSection.classList = "article_section"
-               article.appendChild(articleSection)
+               const crimeSection = document.createElement("span")
+               crimeSection.classList = "crime_section"
+               article.appendChild(classSection)
 
 
-                // Title and Date: h2 child of section
-                const articleTitle = document.createElement("h2")
-                articleTitle.classList = "article_title"
-                articleTitle.textContent = currentArticle.title + "  -  " + currentArticle.date
-                articleSection.appendChild(articleTitle)
+                // crimeName: h3 child of section
+                const rapsheetTitle = document.createElement("h3")
+                rapsheetTitle.classList = "article_title"
+                rapsheetTitle.textContent = rapsheetTitle.title + "  -  " + currentArticle.date
+                rapsheetTitle.appendChild(rapsheetTitle)
                 console.log(articleTitle)
 
 
                 // Rating: p child of section
 
 
-                const articleRating = document.createElement("p")
-                articleRating.classList = "article_rating"
-                articleRating.textContent = currentArticle.rating + " involvement "
-                articleSection.appendChild(articleRating)
-                console.log(articleRating)
+                // const articleRating = document.createElement("p")
+                // articleRating.classList = "article_rating"
+                // articleRating.textContent = currentArticle.rating + " involvement "
+                // articleSection.appendChild(articleRating)
+                // console.log(articleRating)
 
-                if (currentArticle.rating.toLowerCase() === "high") {
-                    articleRating.classList += " rating_high"
-                } else if (currentArticle.rating.toLowerCase() === "medium") {
-                    articleRating.classList += " rating_medium"
-                } else {
+                // if (currentArticle.rating.toLowerCase() === "high") {
+                //     articleRating.classList += " rating_high"
+                // } else if (currentArticle.rating.toLowerCase() === "medium") {
+                //     articleRating.classList += " rating_medium"
+                // } else {
 
-                }
+                // }
 
-                // Description: p child of section
-                const articleDescription = document.createElement("p")
-                articleDescription.classList = "article_description"
-                articleDescription.textContent = currentArticle.description + "   "
-                articleSection.appendChild(articleDescription)
-                console.log(articleDescription)
+                // // Description: p child of section
+                // const articleDescription = document.createElement("p")
+                // articleDescription.classList = "article_description"
+                // articleDescription.textContent = currentArticle.description + "   "
+                // articleSection.appendChild(articleDescription)
+                // console.log(articleDescription)
 
-                // URL: a child of description
-                const articleUrl = document.createElement("a")
-                articleUrl.classList = "article_url"
-                articleUrl.textContent = "Read More"
-                articleUrl.href = currentArticle.url
-                articleUrl.target = "_blank";
-                articleDescription.appendChild(articleUrl)
+                // // URL: a child of description
+                // const articleUrl = document.createElement("a")
+                // articleUrl.classList = "article_url"
+                // articleUrl.textContent = "Read More"
+                // articleUrl.href = currentArticle.url
+                // articleUrl.target = "_blank";
+                // articleDescription.appendChild(articleUrl)
 
-                // additional info: p child of section
-                const articleInfo = document.createElement("p")
-                articleInfo.classList = "article_info"
-                articleInfo.textContent = "Location:   " + currentArticle.location +  "  |  Event Type:   " + currentArticle.typeOfEvent + "  |  Victims:   " + currentArticle.victims + "  |  Witnesses:   " + currentArticle.witnesses + "  |  Agencies:   " + currentArticle.lawEnfAgency
-                articleSection.appendChild(articleInfo)
+                // // additional info: p child of section
+                // const articleInfo = document.createElement("p")
+                // articleInfo.classList = "article_info"
+                // articleInfo.textContent = "Location:   " + currentArticle.location +  "  |  Event Type:   " + currentArticle.typeOfEvent + "  |  Victims:   " + currentArticle.victims + "  |  Witnesses:   " + currentArticle.witnesses + "  |  Agencies:   " + currentArticle.lawEnfAgency
+                // articleSection.appendChild(articleInfo)
 
 
             }
     )
 }
 
-articleDomBuilder()
+CrimesDomBuilder()
 
